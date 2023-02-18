@@ -13,4 +13,4 @@ If someone wants to search for sightings, they need to pick one of the options a
 
 ### **Summary**
 
-While this search table works, there could always be improvements. For example, as you type results could autopopulate from the data. This way you might not even need to 
+While this search table works, there could always be improvements. It currently only takes one filter at a time and that severely limits how precise the results can be. A couple ways to improve the table would be as you type results could autopopulate from the data. This way you might not even need to press enter to find what you want, or to find out that a result isn't in the database. For some of the filters with less options (shape, state, country) a dropdown menu could also work to make it more streamlined.
