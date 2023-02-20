@@ -31,17 +31,21 @@ var filters = {};
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-      let filElement = d3.select("input").property("value");
+      let filElement = d3.select(this);
+      console.log(filElement);
+
     // 4b. Save the value that was changed as a variable.
-      let filValue = filElement.; //something? value?
+      let filValue = filElement.val; //something? value?
+      console.log(filValue);
+
     // 4c. Save the id of the filter that was changed as a variable.
-      let filId = ;
+      //let filId = filElement. ;
   
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
-      if (filter value entered (value/element?^)) {add filterID^? & value^? to filters}
+      //if (filter value entered (value/element?^)) {add filterID^? & value^? to filters}
 
-      if (value) {
+      if (filValue) {
           filteredData = filteredData.filter(row => row.value === value);
       }
       else {
