@@ -49,7 +49,7 @@ function updateFilters() {
           filters[filId] = filValue;
       }
       else {
-          filters[filId] = (" ");
+          delete filters[filId];
 
       };
   
@@ -66,10 +66,12 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    Object.entries(filters).forEach((key, val) => {
+    Object.entries(filters).forEach((entry) => {
+        key = entry[0];
+        val = entry[1];
+        filteredData = filteredData.filter(row => row[key] === val);
         console.log(key + ': ' + val);
-        
-      //filteredData = 
+      
       
     });
     // 10. Finally, rebuild the table using the filtered data
